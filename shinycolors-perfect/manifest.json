@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "샤니마스 퍼펙트 핵",
+    "description": "당신의 판정 퍼펙트로 대체되었다.",
+    "version": "1.1",
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "샤이니컬러즈 퍼펙트 핵 1.1"
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}
