@@ -1689,11 +1689,16 @@ primJsp([0], {
                         return this._skillHistoryList.addSkillHistory(n), this._concertService.appeal(n, t.id, e)
                     }
                 }, {
+                    // 게이지 바 함수
                     key: "_startTimingGauge",
                     value: function (e) {
                         var t = this;
-                        for(var i =0; i < 4; i++){
-                            t.children[10]._appealMeters[i] = t.children[10]._appealMeters[2];
+                        var extensionState = (document.getElementById("hackState").innerHTML)
+                        var selectPoint = parseInt(document.getElementById("selectPointElement").innerHTML)
+                        if(extensionState == "true"){
+                            for(var i =0; i < 4; i++){
+                                t.children[10]._appealMeters[i] = t.children[10]._appealMeters[selectPoint];
+                            }
                         }
                         this._timingGaugeGroup.playSlider(e).then(function () {
                             t.once("touchstart", function () {
@@ -1705,7 +1710,6 @@ primJsp([0], {
                                 })
                             })
                         })
-                        t = temp_t;
                     }
                 }, {
                     key: "_showMemorySkillRoulette",

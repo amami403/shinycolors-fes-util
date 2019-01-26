@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    position: relative;
+    max-width: 20rem;
+    width: 20rem;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(255,200,217);
+    background: linear-gradient(149deg, rgba(255,200,217,1) 0%, rgba(160,239,255,1) 100%);
+}
+
+#wrap{
+    max-width: 40rem;
+    height: 26.8rem;
+}
+
+#logo{
+    width: 15rem;
+    margin: auto;
+    padding: 2rem 0 0.8rem 0
+}
+
+#logo>img{
+    width: 100%;
+}
+
+.btn-wrap{
+    display: block;
+    width: 100%;
+}
+
+.btn-wrap .active-btn{
+    display: block;
+    margin: auto;
+    width: 10rem;
+    border-radius: 100%;
+    border: 0.5rem solid rgba(255,255,255,0.4);
+    box-sizing: border-box;
+    cursor: pointer;
+    filter: grayscale(100%);
+    margin-bottom: 2rem;
+}
+
+.btn-wrap .active-btn.active{
+    filter: grayscale(0%) !important;
+}
+
+.state-wrap{
+    padding-bottom: 1.4rem;
+    text-align: center;
+}
+
+.state-wrap .state{
+    font-size: 1.5rem;
+    padding-bottom: 0.1rem;
+    font-weight: bolder;
+}
+
+.check-update{
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+}
+
+#update-btn{
+    margin: auto;
+    display: block;
+    width: 13rem;
+    background: #3F51B5;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.btn{
+    margin: auto;
+    display: block;
+    width: 13rem;
+    background: #3F51B5;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.check-update #go-download{
+    display: none;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.check-update #go-download:hover{
+    text-decoration: underline;
+}
+
+.check-update a{
+    cursor: pointer;
+}
+
+.normal{
+    background: #0097A7
+}
+
+.good{
+    background: #FF8F00
+}
+
+.perfect{
+    background: #E91E63;
+}
+
