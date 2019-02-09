@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "샤니마스 퍼펙트 핵",
-    "description": "당신의 판정 퍼펙트로 대체되었다.",
-    "version": "2.1",
+    "name": "샤니마스 페스 유틸",
+    "description": "당신의 페스 옴닉으로 대체되었다.",
+    "version": "3.0",
     "permissions": [
         "<all_urls>",
         "webRequest",
@@ -13,6 +13,7 @@
     "content_scripts": [
         {
           "matches": ["*://shinycolors.enza.fun/*"],
+          "css": ["style.css"],
           "js": ["/lib/jquery-3.3.1.min.js", "content.js"],
           "run_at": "document_end"
         }
@@ -26,9 +27,10 @@
     "browser_action": {
         "default_popup": "/site/popup.html",
         "default_icon": "icon.png",
-        "default_title": "샤이니컬러즈 퍼펙트 핵"
+        "default_title": "샤니마스 페스 유틸"
     },
     "icons": {
         "128": "icon.png"
-    }
+    },
+    "web_accessible_resources": ["dealMeter.js", "/lib/jquery-3.3.1.min.js"]
 }

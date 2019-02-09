@@ -1,0 +1,168 @@
+*{
+    color: #797081;
+}
+
+#dm-popup{
+    z-index: 1000;
+    pointer-events: all;
+    margin: auto;
+    max-width: 40rem;
+    width: 50%;
+    max-height: 30rem;
+    height: 70%;
+    background: rgba(235,237,239, 0.9);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    display: none;
+}
+
+#dm-popup .list{
+    background: #f2ecf2;
+    width: 90%;
+    height: 78%;
+    border: 1px solid #bdb4c3;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    overflow-y: auto;
+}
+
+#dm-popup .ok-wrap{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ok-btn{
+    width: 13%;
+}
+
+#ok-btn img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 !important;
+    line-height: unset !important;
+}
+
+#dm-popup .list ul{
+    list-style: none;
+    padding: 20px 0;
+}
+
+#dm-popup .list ul li::before{
+    content: none;
+}
+
+#dm-popup .list ul li{
+    margin-bottom: 15px;
+}
+
+#dm-popup .list ul > li:last-child{
+    margin-bottom: 0;
+}
+
+.player-wrap{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.attr{
+    flex: 1;
+}
+
+.attr img{
+    margin: 0 4% 0 0 !important;
+    display: block;
+    width: 10%;
+
+    line-height: unset !important;
+}
+
+.attr > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.attr > div:last-child{
+    margin-bottom: 0px;
+}
+
+.attr-text{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+
+.nickname{
+    text-align: center;
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#dm-wrap{
+    overflow: hidden;
+    z-index: 100;
+    width: 941px;
+    height: 530px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    pointer-events: none;
+}
+
+#dm-wrap-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#dm-btn{
+    pointer-events: all;
+    display: none;
+    width: 5%;
+    background: url(https://raw.githubusercontent.com/MaxKss/shinycolors-helper/master/dm.png) 0% 0% / cover no-repeat;
+    position: absolute;
+    right: 15.3%;
+    height: 47.0387px;
+    top: 2%;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .attr-text {
+      font-size: 0.7em;
+    }
+    .nickname{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .attr-text {
+      font-size: 0.6em;
+    }
+    .nickname{
+        font-size: 0.7em;
+    }
+}

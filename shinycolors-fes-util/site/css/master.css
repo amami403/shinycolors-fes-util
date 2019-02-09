@@ -5,9 +5,8 @@
 
 body, html{
     position: relative;
-    max-width: 20rem;
+    height: 33rem;
     width: 20rem;
-    height: 40rem;
     background-repeat: no-repeat;
     background-size: cover;
     background: rgb(255,200,217);
@@ -15,8 +14,8 @@ body, html{
 }
 
 #wrap{
-    max-width: 40rem;
-    height: 26.8rem;
+    height: 100%;
+    overflow-y: auto;
 }
 
 #logo{
@@ -34,22 +33,6 @@ body, html{
     width: 100%;
 }
 
-.btn-wrap .active-btn{
-    display: block;
-    margin: auto;
-    width: 10rem;
-    border-radius: 100%;
-    border: 0.5rem solid rgba(255,255,255,0.4);
-    box-sizing: border-box;
-    cursor: pointer;
-    filter: grayscale(100%);
-    margin-bottom: 2rem;
-}
-
-.btn-wrap .active-btn.active{
-    filter: grayscale(0%) !important;
-}
-
 .state-wrap{
     padding-bottom: 1.4rem;
     text-align: center;
@@ -63,39 +46,47 @@ body, html{
 
 .check-update{
     width: 100%;
-    position: absolute;
     bottom: 1rem;
     text-align: center;
 }
 
 #update-btn{
-    margin: auto;
-    display: block;
-    width: 13rem;
     background: #3F51B5;
     color: white;
+    margin-bottom: 0.5rem;
+}
+
+.active-btn.active{
+    background: #3F51B5;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 13rem;
+    color: white;
+    background: #616161;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
     padding: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     border-radius: 0.3rem;
     font-size: 0.9rem;
 }
 
-.btn{
-    margin: auto;
-    display: block;
-    width: 13rem;
-    background: #3F51B5;
+.perfect-options .btn-wrap .btn{
+    background: white;
+    margin-top: 0.5rem;
+}
+
+.perfect-options .btn-wrap .btn.active{
     color: white;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    padding: 0.8rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0.3rem;
-    font-size: 0.9rem;
+}
+
+.perfect-options .btn-wrap{
+    margin-bottom: 1rem;
 }
 
 .check-update #go-download{
@@ -115,14 +106,44 @@ body, html{
 }
 
 .normal{
-    background: #0097A7
+    border: 1px solid #0097A7;
+    color: #0097A7;
 }
 
 .good{
-    background: #FF8F00
+    border: 1px solid #F4511E;
+    color: #F4511E
 }
 
 .perfect{
-    background: #E91E63;
+    border: 1px solid #E91E63;
+    color: #E91E63;
+}
+
+.normal.active{
+    background: #0097A7 !important;
+}
+
+.good.active{
+    background: #F4511E !important;
+}
+
+.perfect.active{
+    background: #E91E63 !important;
+}
+
+.perfect-options .btn-wrap{
+    height: 100%;
+}
+
+.perfect-options{
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
+
+#perfect > .active-btn.active + .perfect-options{
+    max-height: 1000px;
+    transition: max-height 0.15s ease-out;
 }
 
