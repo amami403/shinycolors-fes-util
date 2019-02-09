@@ -1,8 +1,8 @@
 shinycolors-perfect
 =============
-> The Auto Timing Util for THE iDOLM@STER: Shiny Colors
+> The fesConcert Util for THE iDOLM@STER: Shiny Colors
 
-shinycolors-perfect는 페스의 판정을 자동으로 맞춰주는 확장프로그램입니다.
+shinycolors-fes-util은 샤니마스의 페스를 보조해주는 유틸 모음입니다
 
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/29334258/51791040-97855780-21e0-11e9-8bc5-45480529a637.gif)
 
@@ -15,12 +15,18 @@ shinycolors-perfect는 페스의 판정을 자동으로 맞춰주는 확장프�
 
 노멀, 굿, 퍼펙트중 원하는 판정을 선택 할 수 있습니다.
 
+딜미터기
+-------------
+![2019-02-10 2 43 19](https://user-images.githubusercontent.com/29334258/52524223-0d5be980-2cde-11e9-8476-ae40ecc8bca6.png)
+
+상대와 내가 넣은 딜량을 실시간으로 확인 할 수 있습니다.
+
 편의 기능
 =============
 
 온오프 / 버전확인 기능 지원
 -------------
-![2019-01-27 3 03 34](https://user-images.githubusercontent.com/29334258/51791045-9eac6580-21e0-11e9-84a2-14fb172a3a72.png)
+![2019-02-10 2 42 59](https://user-images.githubusercontent.com/29334258/52524222-0cc35300-2cde-11e9-88c3-176cc758e1d0.png)
 
 판정 고정을 온오프 할 수 있습니다.   
 또한 업데이트를 수시로 확인 할 수 있어 빠른 대응이 가능합니다.
