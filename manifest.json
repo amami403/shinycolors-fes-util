@@ -15,7 +15,7 @@
           "matches": ["*://shinycolors.enza.fun/*"],
           "css": ["style.css"],
           "js": ["/lib/jquery-3.3.1.min.js", "content.js"],
-          "run_at": "document_end"
+          "run_at": "document_start"
         }
     ],
     "background": {
@@ -32,5 +32,5 @@
     "icons": {
         "128": "icon.png"
     },
-    "web_accessible_resources": ["dealMeter.js", "/lib/jquery-3.3.1.min.js"]
+    "web_accessible_resources": ["/lib/jquery-3.3.1.min.js", "dealMeter.js"]
 }
